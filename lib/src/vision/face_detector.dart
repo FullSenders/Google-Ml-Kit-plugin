@@ -135,6 +135,7 @@ class Face {
           data['width'],
           data['height'],
         ),
+        headEulerAngleX = data['headEulerAngleX'],
         headEulerAngleY = data['headEulerAngleY'],
         headEulerAngleZ = data['headEulerAngleZ'],
         leftEyeOpenProbability = data['leftEyeOpenProbability'],
@@ -175,6 +176,8 @@ class Face {
   ///
   /// The point (0, 0) is defined as the upper-left corner of the image.
   final Rect boundingBox;
+
+  final double? headEulerAngleX;
 
   /// The rotation of the face about the vertical axis of the image.
   ///

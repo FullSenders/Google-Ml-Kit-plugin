@@ -242,6 +242,7 @@ b. Extract faces.
 for (Face face in faces) {
   final Rect boundingBox = face.boundingBox;
 
+  final double rotX = face.headEulerAngleY; // Head is rotated to the upwards rotX degrees
   final double rotY = face.headEulerAngleY; // Head is rotated to the right rotY degrees
   final double rotZ = face.headEulerAngleZ; // Head is tilted sideways rotZ degrees
 
